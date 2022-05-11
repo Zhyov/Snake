@@ -3,7 +3,8 @@ spacing = 50
 while spacing >= 1:
     print()
     spacing = spacing - 1
-print("Snake v0.0.3 by LukeBlack952")
+print("Snake v0.0.3s patch-1 by LukeBlack952")
+print()
 print("What do you want the speed of the game to be? (Turtle | Snake | Rabbit)")
 speed = input(">> ")
 if speed.upper() == "TURTLE":
@@ -16,7 +17,7 @@ elif speed.upper() == "RABBIT":
     speed = "Rabbit"
     cspeed = 12
 print()
-print("How many apples do you want to spawn? (One | Some | Many)")
+print("How many apples do you want to spawn? (One | Some | Many) [DOESNT WORK JUST CHOOSE A RANDOM ONE]")
 apples = input(">> ")
 if apples.upper() == "ONE":
     apples = "One"
@@ -303,8 +304,8 @@ right = (1, 0)
 def main():
     pygame.init()
 
-    pygame.display.set_caption("Snake v0.0.3")
-    pygame.display.set_icon(pygame.image.load("./Icon/icon.png"))
+    pygame.display.set_caption("Snake v0.0.3s patch-1")
+    pygame.display.set_icon(pygame.image.load("Icon/icon.ico"))
 
     clock = pygame.time.Clock()
     screen = pygame.display.set_mode((screen_width, screen_height), 0, 32)
